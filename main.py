@@ -13,12 +13,35 @@
 
 # Score [BOM, OK, RUIM]
 
+# Bom - Good
+# Ok - Standard
+# Ruim - Poor
+
 import pandas
+from sklearn.preprocessing import LabelEncoder
 
 def processa(arquivo):
 
     tabela = pandas.read_csv("clientes.csv")
-    print(tabela)
+
+    # Verificando as colunas do arquivo
+    print(tabela.info())
+
+    #LabelEncoder
+    codificador = LabelEncoder()
+
+
+    # profissao
+
+    # cientista - 1
+    # mecanico - 2
+    # ator - 3
+    # pintor - 4
+    # motorista - 5
+    # engenheiro - 6
+    # pedreiro - 7
+
+
 
 
 # Press the green button in the gutter to run the script.
